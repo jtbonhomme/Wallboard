@@ -1,7 +1,7 @@
 Wallboard
 =========
 
-[![Wallboard screenshot](https://github.com/jamesmaidment/wallboard/raw/master/img/screenshot.png)]
+![Wallboard screenshot](https://github.com/jamesmaidment/wallboard/raw/master/img/screenshot.png)
 
 Wallboard is a visual display for team results inspired by the [Panic status board](http://www.panic.com/blog/2010/03/the-panic-status-board/).  It's created and maintained by [James Maidment](http://twitter.com/jamesjamesm).
 
