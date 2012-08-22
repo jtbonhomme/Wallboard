@@ -1,0 +1,271 @@
+@import "bootstrap/bootstrap.less";
+@import "bootstrap/responsive.less";
+@import "bootswatch.less";
+
+body {
+  padding-bottom: 0px;
+  background: #000;
+  overflow: hidden; 
+  height: 1080px;
+
+ font-family: 'museo-slab';
+}
+
+@font-face {
+  font-family: 'museo-slab';
+  src: url('../fonts/museo_slab_500.eot?') format('eot'), url('../fonts/museo_slab_500.woff') format('woff'), url('../fonts/museo_slab_500.ttf') format('truetype'), url('../fonts/museo_slab_500.otf') format('opentype');
+}
+
+/* ===== Primary Styles ========================================================
+   Author: James Maidment
+   ========================================================================== */
+
+.wallboard {
+	margin-left: -20px;
+}
+
+.admin {
+	hr {
+		border: none;
+		border-bottom: 1px dotted #545553;
+	}
+
+	tr {
+		cursor: pointer;
+	}
+	select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+		color: #000;
+	}
+}
+
+.alert {
+	padding-right: 18px;
+}
+
+.alert.alert-success {
+	border: 1px solid #7fbe00;
+}
+
+
+/* ===== Sidebar ======================================================= */
+
+.sidebar {
+	border-right: 1px solid #33b5e5;
+	padding-top: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 25px;
+	color: #fff;
+	height: 1035px;
+	line-height: 1em;
+
+	h2 {
+		font-size: 79px;
+		line-height: 1em;
+
+	}
+	.clients {
+		background: url("../img/new-clients.png") no-repeat top left;
+		background-position: 60px 0;
+		height: 25%;
+		padding-left: 100px;
+		width: 100%;
+		line-height: 1.1em;
+		h2 {
+			font-size: 120px;
+			line-height: 0.9em;
+		}
+	}
+
+	.revenue {
+		background: url("../img/revenue.png") no-repeat top left;
+		background-position: 70px 0;
+		height: 25%;
+		padding-left: 100px;
+		width: 100%;
+		h2 {
+			font-size: 55px;
+			line-height: 1.1em;
+		}
+	}
+
+
+	.products {
+		background: url("../img/products.png") no-repeat top left;
+		background-position: 50px 0;
+		height: 25%;
+		padding-left: 80px;
+		margin-left: 20px;
+		width: 100%;
+		h2 {
+			line-height: 1em;
+			font-size: 120px;
+		}
+	}
+
+	.countdown {
+		background: url("../img/calendar.png") no-repeat top left;
+		background-position: 30px 20px;
+		height: 25%;
+		padding-left: 80px;
+		margin-left: 20px;
+		font-size: 30px;
+		width: 100%;
+		#defaultCountdown {
+			padding-top: 50px;
+			font-size: 80px;
+			line-height: 1.1em;
+		}
+	}
+
+}
+
+/* ===== Content ======================================================= */
+
+.content {
+	height: 1280px;
+
+	h2 {
+		text-transform: uppercase;
+		font-size: 32px;
+		line-height: 1.8em;
+		margin-top: 35px;
+		clear: both;
+	}
+
+	.label {
+		font-size: 16px;
+		border-radius: 7px;
+		padding: 2px 7px;
+		font-family: 'Open Sans';
+	}
+
+}
+
+/* ===== Horizontal Bar Graphs ======================================================= */
+
+.chartlist {
+	height: 35%;
+}
+
+.chartlist li { 
+  position: relative;
+  display: block;
+  color: #fff;
+}
+
+.chartlist .count { 
+  display: block; 
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  margin: 0 0.3em; 
+  text-align: right; 
+  font-size: 0.875em;
+}
+
+.chartlist .barlabel { 
+  display: block;
+  overflow: hidden;
+  padding-left: 10px;
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 1.7em;
+
+  &.orange {
+  	color: #ff6d00;
+  }
+  &.blue {
+  	color: #00abd6;
+  }
+  &.pink {
+  	color: #f3426e;
+  }
+}
+.chartlist li {
+	clear: left;
+}
+
+.chartlist li span.bar { 
+  display: block; 
+  padding: 0.5em 4.5em 0.5em 0.6em;
+  z-index: 2;
+  margin: 0 0 10px 0;
+  font-size: 26px;
+  float: left; 
+  border-radius: 7px;
+
+  &.orange {
+  	background: #ff6d00;
+  }
+  &.blue {
+  	background: #00abd6;
+  }
+  &.pink {
+  	background: #f3426e;
+  }
+}
+
+
+/* ===== Newsfeed ======================================================= */
+
+.newsfeed {
+		background: #414141;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		text-transform: uppercase;
+		font-family: 'Droid Sans', sans-serif;
+		padding-left: 225px;
+		h3 {
+			display: inline;
+			padding: 21px 15px;
+			padding-left: 130px;
+			font-size: 32px;
+			font-weight: bold;
+			line-height: 1em;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+
+			&:after { /* right arrow */
+				content: " "; 
+				display: block; 
+				width: 0; 
+				height: 0;
+				border-top: 40px solid transparent;           /* Go big on the size, and let overflow hide */
+				border-bottom: 40px solid transparent;
+				border-left: 15px solid #ee1b2e;
+				position: absolute;
+				top: 50%;
+				margin-top: -38px; 
+				left: 100%;
+				z-index: 2; 
+			}
+		}
+		ul {
+			color: #fff;
+			display: inline;
+			li {
+				font-size: 62px;
+				font-weight: bold;
+				line-height: 1.2em;
+				margin-left:0.7em;
+				display: inline;
+				&:before {
+					content: '\2022';
+					margin-right:0.7em;
+				}
+			}
+		}
+	}
+
+/* ===== Admin ======================================================= */
+
+.admin {
+	padding-top: 50px;
+
+	img {
+		padding-left: 50px;
+	}
+}
